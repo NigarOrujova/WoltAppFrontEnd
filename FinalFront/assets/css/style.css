@@ -1,0 +1,130 @@
+/* Searchbar */
+@media screen and (max-width: 1450px) and (min-width: 1050px) {
+  .search {
+    width: 330px !important;
+  }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 770px) {
+  .searchbar {
+    padding-left: 5px !important;
+  }
+  .search {
+    width: 220px !important;
+  }
+}
+
+@media screen and (min-width: 575px) and (max-width: 770px) {
+  .welcome-parallax {
+    min-height: 500px;
+  }
+  .welcome-parallax-content {
+    height: 500px;
+  }
+  .searchbar {
+    padding-left: 5px !important;
+  }
+  .search {
+    width: 135px !important;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 575px) {
+  .searchbar {
+    padding-left: 5px !important;
+  }
+  .search {
+    width: 290px !important;
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 430px) {
+  .searchbar {
+    padding-left: 5px !important;
+    margin-top: 15px;
+  }
+  .search {
+    width: 245px !important;
+  }
+}
+
+@media screen and (min-width: 325px) and (max-width: 380px) {
+  .searchbar {
+    padding-left: 5px !important;
+    margin-top: 15px;
+  }
+  .search {
+    width: 220px !important;
+  }
+}
+
+@media screen and (min-width: 325px) and (max-width: 355px) {
+  .searchbar {
+    padding-left: 5px !important;
+    margin-top: 15px;
+  }
+  .search {
+    width: 185px !important;
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 325px) {
+  .searchbar {
+    padding-left: 0px !important;
+    margin-top: 15px;
+  }
+  .search {
+    width: 150px !important;
+  }
+  .time-title {
+    padding-top: 10px;
+  }
+}
+
+#loader {
+  background: white url("/assets/img/loader.gif") no-repeat center center;
+  background-size: 30%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+}
+
+.navbar-brand {
+  height: 80px;
+  margin-top: -30px;
+}
+
+.searchbar {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.searchbar .search {
+  width: 420px;
+  height: 40px;
+  border: 1px solid #009de0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  /* width: 478px !important; */
+}
+
+.searchbar .search-btn {
+  border: 1px solid #009de0;
+  background: #009de0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100px;
+  height: 40px;
+}
+
+.searchbar .search-btn i {
+  color: white;
+}
+
+.searchbar .search-btn:hover {
+  background: #006996;
+}
+/*# sourceMappingURL=style.css.map */
