@@ -47,7 +47,7 @@ $('.slide-two').owlCarousel({
             nav:true
         },
         600:{
-            items:3,
+            items:2,
             nav:false
         },
         1000:{
@@ -71,7 +71,7 @@ $('.slide-three').owlCarousel({
             nav:true
         },
         600:{
-            items:3,
+            items:2,
             nav:false
         },
         1000:{
@@ -96,7 +96,7 @@ $('.slide-four').owlCarousel({
             nav:true
         },
         600:{
-            items:3,
+            items:2,
             nav:false
         },
         1000:{
@@ -121,7 +121,7 @@ $('.slide-five').owlCarousel({
             nav:true
         },
         600:{
-            items:3,
+            items:2,
             nav:false
         },
         1000:{
