@@ -1,1 +1,26 @@
 /* No CSS *//*# sourceMappingURL=app.css.map */
+
+::-webkit-scrollbar{
+    width: 11px;
+}
+
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(0 157 224);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(0, 157, 224, 0.76);
+}
+
+::-webkit-scrollbar-thumb:active{
+    background: rgb(1, 115, 162);
+}

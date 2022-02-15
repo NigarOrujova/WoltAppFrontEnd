@@ -1,0 +1,85 @@
+
+/* Searchbar */
+@media screen and (max-width:1450px) and (min-width:1050px){
+    .search{
+        width: 330px !important;
+    }
+}
+
+@media screen and (max-width:1050px) and (min-width:770px){
+    .searchbar{
+        padding-left: 5px !important;
+    }
+    .search{
+        width: 220px !important;
+    }
+}
+
+@media screen and (min-width:575px) and (max-width:770px){
+    .welcome-parallax {
+        min-height: 500px;
+    }
+
+    .welcome-parallax-content{
+        height: 500px;
+    }
+
+    .searchbar{
+        padding-left: 5px !important;
+    }
+    .search{
+        width: 135px !important;
+    }
+}
+
+@media screen and (min-width:430px) and (max-width:575px){
+    .searchbar{
+        padding-left: 5px !important;
+    }
+    .search{
+        width: 290px !important;
+    }
+}
+
+@media screen and (min-width:380px) and (max-width:430px){
+    .searchbar{
+        padding-left: 5px !important;
+        margin-top: 15px;
+    }
+    .search{
+        width: 245px !important;
+    }
+}
+
+@media screen and (min-width: 325px) and (max-width:380px){
+    .searchbar{
+        padding-left: 5px !important;
+        margin-top: 15px;
+    }
+    .search{
+        width: 220px !important;
+    }
+}
+
+@media screen and (min-width:325px) and (max-width:355px){
+    .searchbar{
+        padding-left: 5px !important;
+        margin-top: 15px;
+    }
+    .search{
+        width: 185px !important;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 325px) {
+    .searchbar{
+        padding-left: 0px !important;
+        margin-top: 15px;
+    }
+    .search{
+        width: 150px !important;
+    }
+    .time-title{
+        padding-top: 10px;
+    }
+}
