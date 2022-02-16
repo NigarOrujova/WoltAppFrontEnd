@@ -3,9 +3,15 @@
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
-.slide-one .item img:hover {
-  -webkit-transform: 0.3s;
-          transform: 0.3s;
+.slide-one .item .imgArea {
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.slide-one .item .imgArea:hover img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -22,6 +28,14 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
+}
+
+#card .card {
+  height: 300px;
+}
+
+#card .card h3 {
+  font-size: 18px;
 }
 
 /* Searchbar */

@@ -1,8 +1,13 @@
 .slide-one{
     .item{
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-        img:hover{
-            transform: 0.3s;
+        .imgArea{
+            overflow: hidden;
+            transition: 0.5s;
+
+        }
+        .imgArea:hover img{
+            transition: 0.5s;            
             transform: scale(1.1);
         }
         .card-body{

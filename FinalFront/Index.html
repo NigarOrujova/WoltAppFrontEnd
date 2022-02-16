@@ -20,7 +20,7 @@
 <body>
     <div id="loader"></div>
     <!-- Header Start -->
-    <header>
+    <header id="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img height="120" src="./assets/img/nav-logo.gif" alt=""></a>
@@ -55,7 +55,7 @@
     <!-- Header End -->
     <!-- Main Start -->
     <main>
-        <section>
+        <section id="filter">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -68,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="hero">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -77,12 +77,15 @@
                                 <div class="card mb-3">
                                     <div class="row no-gutters">
                                         <div class="col-md-8">
-                                            <img src="./assets/img/hero-1.jpg" alt="...">
+                                            <div class="imgArea">
+                                                <img src="./assets/img/hero-1.jpg" alt="...">
+                                            </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="card-body">
                                                 <h5 class="card-title">Pulsuz çatdirilma!</h5>
-                                                <p class="card-text">Buta aptekdən bütün sifarişlərinizdə pulsuz çatdirilma</p>
+                                                <p class="card-text">Buta aptekdən bütün sifarişlərinizdə pulsuz
+                                                    çatdirilma</p>
                                             </div>
                                         </div>
                                     </div>
@@ -92,14 +95,15 @@
                                 <div class="card mb-3">
                                     <div class="row no-gutters">
                                         <div class="col-md-8">
-                                            <div class="imgarea">
+                                            <div class="imgArea">
                                                 <img src="./assets/img/hero-2.jpg" alt="...">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="card-body">
                                                 <h5 class="card-title">Coca-Cola ilə 1 AZN keşbek!</h5>
-                                                <p class="card-text">Supermarketlərdən sifariş edin və 1 AZN keşbek qazanın!</p>
+                                                <p class="card-text">Supermarketlərdən sifariş edin və 1 AZN keşbek
+                                                    qazanın!</p>
                                             </div>
                                         </div>
                                     </div>
@@ -109,7 +113,9 @@
                                 <div class="card mb-3">
                                     <div class="row no-gutters">
                                         <div class="col-md-8">
-                                            <img src="./assets/img/hero-4.jpg" alt="...">
+                                            <div class="imgArea">
+                                                <img src="./assets/img/hero-4.jpg" alt="...">
+                                            </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="card-body">
@@ -124,7 +130,9 @@
                                 <div class="card mb-3">
                                     <div class="row no-gutters">
                                         <div class="col-md-8">
-                                            <img src="./assets/img/hero-5.jpg" alt="...">
+                                            <div class="imgArea">
+                                                <img src="./assets/img/hero-5.jpg" alt="...">
+                                            </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="card-body">
@@ -139,7 +147,9 @@
                                 <div class="card mb-3">
                                     <div class="row no-gutters">
                                         <div class="col-md-8">
-                                            <img src="./assets/img/hero-6.jpg" alt="...">
+                                            <div class="imgArea">
+                                                <img src="./assets/img/hero-6.jpg" alt="...">
+                                            </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="card-body">
@@ -152,205 +162,566 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="card">
+            <div class="container">
+                <div class="row">
                     <div class="col-lg-12">
                         <div class="slide-two owl-carousel owl-theme">
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-1.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-2.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-3.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-4.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do
+                                        eiusmod tempor ut</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-5.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do
+                                        eiusmod tempor ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-6.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do
+                                        eiusmod tempor ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-7.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do
+                                        eiusmod tempor ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-8.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do
+                                        eiusmod tempor ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do
+                                        eiusmod tempor ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
-                            </div>
-                            <div class="item">
-                                <h2>SALAM</h2>
-                            </div>
-                            <div class="item">
-                                <h2>SALAM</h2>
-                            </div>
-                            <div class="item">
-                                <h2>SALAM</h2>
-                            </div>
-                            <div class="item">
-                                <h2>SALAM</h2>
-                            </div>
-                            <div class="item">
-                                <h2>SALAM</h2>
-                            </div>
-                            <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-10.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do
+                                        eiusmod tempor ut
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="slide-three owl-carousel owl-theme">
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                         </div>
                         <div class="slide-four owl-carousel owl-theme">
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                         </div>
                         <div class="slide-five owl-carousel owl-theme">
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                             <div class="item">
-                                <h2>SALAM</h2>
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./assets/img/restaurant-9.png" class="card-img-top" alt="...">
+                                    </div>
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
                         </div>
                     </div>
