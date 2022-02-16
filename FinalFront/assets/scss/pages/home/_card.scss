@@ -1,8 +1,20 @@
 #card{
     .card{
         height: 300px;
+        border-radius: 15px;
+        img{
+            border-radius: 15px 15px 0px 0;
+        }
         h3{
             font-size: 18px;
+        }
+    }
+    .owl-nav{
+        display: flex;
+        justify-content: end;
+        font-size: 18px;
+        span{
+            font-size: 40px;
         }
     }
 }

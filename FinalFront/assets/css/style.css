@@ -1,22 +1,26 @@
-.slide-one .item {
+#hero .owl-nav span {
+  font-size: 40px;
+}
+
+#hero .slide-one .item {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
-.slide-one .item .imgArea {
+#hero .slide-one .item .imgArea {
   overflow: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-.slide-one .item .imgArea:hover img {
+#hero .slide-one .item .imgArea:hover img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.slide-one .item .card-body {
+#hero .slide-one .item .card-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,10 +36,29 @@
 
 #card .card {
   height: 300px;
+  border-radius: 15px;
+}
+
+#card .card img {
+  border-radius: 15px 15px 0px 0;
 }
 
 #card .card h3 {
   font-size: 18px;
+}
+
+#card .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-size: 18px;
+}
+
+#card .owl-nav span {
+  font-size: 40px;
 }
 
 /* Searchbar */
