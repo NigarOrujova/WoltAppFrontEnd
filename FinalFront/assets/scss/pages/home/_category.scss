@@ -2,4 +2,12 @@
     .card{
         
     }
+    .owl-nav{
+        display: flex;
+        justify-content: end;
+        font-size: 18px;
+        span{
+            font-size: 40px;
+        }
+    }
 }

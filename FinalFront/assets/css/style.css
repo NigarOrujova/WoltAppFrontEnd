@@ -61,6 +61,20 @@
   font-size: 40px;
 }
 
+#category .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-size: 18px;
+}
+
+#category .owl-nav span {
+  font-size: 40px;
+}
+
 /* Searchbar */
 @media screen and (max-width: 1450px) and (min-width: 1050px) {
   .search {
@@ -189,6 +203,10 @@
 
 .searchbar .search-btn:hover {
   background: #006996;
+}
+
+#footer {
+  background-color: #f3f3f3;
 }
 
 .container .row .col-lg-12 .filter {
