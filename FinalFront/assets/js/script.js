@@ -35,7 +35,6 @@ $('.slide-one').owlCarousel({
 })
 
 $('.slide-two').owlCarousel({
-    loop:true,
     margin:10,
     dots:false,
     autoplay:false,
@@ -59,7 +58,6 @@ $('.slide-two').owlCarousel({
 })
 
 $('.slide-three').owlCarousel({
-    loop:true,
     margin:10,
     dots:false,
     autoplay:false,
@@ -84,7 +82,6 @@ $('.slide-three').owlCarousel({
 
 
 $('.slide-four').owlCarousel({
-    loop:true,
     margin:10,
     dots:false,
     autoplay:false,
@@ -109,7 +106,6 @@ $('.slide-four').owlCarousel({
 
 
 $('.slide-five').owlCarousel({
-    loop:true,
     margin:10,
     dots:false,
     autoplay:false,

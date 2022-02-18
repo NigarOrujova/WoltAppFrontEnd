@@ -37,6 +37,10 @@
 #card .card {
   height: 300px;
   border-radius: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 #card .card img {
@@ -45,6 +49,20 @@
 
 #card .card h3 {
   font-size: 18px;
+  color: #000;
+}
+
+#card .card h3 {
+  color: #000;
+  text-decoration: none;
+}
+
+#card .card p {
+  color: #000;
+}
+
+#card a {
+  text-decoration: none;
 }
 
 #card .owl-nav {
@@ -70,6 +88,10 @@
 
 #category .card .card-img img {
   height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 #category .card .card-img:hover img {
@@ -77,6 +99,17 @@
   transition: 0.5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+#category h3 {
+  font-size: 24px;
+  padding: 15px 0;
+  color: #000;
+}
+
+#category h3:hover {
+  color: #000;
+  text-decoration: none;
 }
 
 #category .owl-nav {
@@ -91,6 +124,113 @@
 
 #category .owl-nav span {
   font-size: 40px;
+}
+
+#discount .card {
+  height: 200px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#discount .card .container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.75)));
+  background: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.75) 100%);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#discount .card .container .col-lg-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#discount .card .container .col-lg-3 .discountArea {
+  width: 100%;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f93a25;
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+  max-height: 55px;
+}
+
+#discount .card .container .col-lg-9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#discount .card .container .col-lg-9 .cardItem {
+  padding: 20px 10px;
+}
+
+#discount .card .container .col-lg-9 .cardItem h3 {
+  color: #fff;
+}
+
+#discount .card .container .col-lg-9 .cardItem p {
+  color: #fff;
+}
+
+#discount a {
+  text-decoration: none;
+}
+
+#discount .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 48px;
+}
+
+#discount .owl-nav span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 #resHero {
@@ -285,11 +425,57 @@
 }
 
 #header .searchbar .search-btn:hover {
-  background: #006996;
+  background: #168cbe;
 }
 
 #footer {
   background-color: #f3f3f3;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer ul a {
+  color: black;
+}
+
+#footer ul a:hover {
+  color: #00aaf3;
+  text-decoration: none;
+}
+
+#footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .social-media li {
+  width: 36px;
+  height: 36px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  margin: 3px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#footer .social-media i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer .social-media li:hover {
+  color: #fff;
+  background-color: #418ea5;
 }
 
 .container .row .col-lg-12 .filter {

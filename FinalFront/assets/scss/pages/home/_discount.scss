@@ -1,0 +1,65 @@
+#discount{
+    .card{
+        height: 200px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: end;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        .container{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.75) 100%);
+            border-radius: 10px;
+            display: flex;
+            .col-lg-3{
+                display: flex;
+                align-items: flex-end;
+                .discountArea{
+                    width: 100%;
+                    padding: 20px 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgb(249, 58, 37);
+                    color: #fff;
+                    border-radius: 8px 8px 0 0;
+                    max-height: 55px;
+                }
+            }
+            .col-lg-9{
+                display: flex;
+                align-items: center;
+                .cardItem{
+                    padding: 20px 10px;
+                    h3{
+                        color: #fff;
+                    }
+                    p{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    .owl-nav{
+        display: flex;
+        justify-content: end;
+        align-items: flex-start;
+        font-size: 48px;
+        span{
+            display: flex;
+            justify-content: flex-start;
+            align-items:flex-start;
+        }
+    }
+}

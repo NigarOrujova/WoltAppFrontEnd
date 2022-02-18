@@ -1,4 +1,35 @@
 #footer{
     background-color: rgb(243, 243, 243);
-    
+    ul{
+        list-style: none;
+        padding: 0;
+        a{
+            color: black;
+        }
+        a:hover{
+            color:$base-color;
+            text-decoration: none;
+        }
+    }
+    .social-media{
+        display: flex;
+    }
+    .social-media li{
+        width: 36px;
+        height: 36px;
+        color: #000;
+        background-color:#fff;
+        text-align: center;
+        border-radius: 50%;
+        margin: 3px;
+        transition: .3s ease;
+    }
+    .social-media i{
+        display: flex;
+        justify-content: center;
+    }
+    .social-media li:hover{
+        color: #fff;
+        background-color: rgb(65, 142, 165);
+    }
 }
