@@ -79,22 +79,18 @@
   font-size: 40px;
 }
 
-#category .card .card-img {
+#category .card {
   height: 250px;
   overflow: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-#category .card .card-img img {
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
-#category .card .card-img:hover img {
+#category .card:hover img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: scale(1.1);
