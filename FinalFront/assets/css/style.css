@@ -1,3 +1,7 @@
+#hero {
+  padding: 20px 0;
+}
+
 #hero .owl-nav span {
   font-size: 40px;
 }
@@ -229,6 +233,104 @@
           align-items: flex-start;
 }
 
+#restaurants {
+  padding: 20px 0;
+}
+
+#restaurants .card {
+  height: 300px;
+  border-radius: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#restaurants .card img {
+  border-radius: 15px 15px 0px 0;
+}
+
+#restaurants .card h3 {
+  font-size: 18px;
+  color: #000;
+}
+
+#restaurants .card h3 {
+  color: #000;
+  text-decoration: none;
+}
+
+#restaurants .card p {
+  color: #000;
+}
+
+#restaurants a {
+  text-decoration: none;
+}
+
+#restaurants .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-size: 18px;
+}
+
+#restaurants .owl-nav span {
+  font-size: 40px;
+}
+
+#stories {
+  padding: 20px 0;
+}
+
+#stories .card {
+  height: 300px;
+  border-radius: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#stories .card img {
+  border-radius: 15px 15px 0px 0;
+}
+
+#stories .card h3 {
+  font-size: 18px;
+  color: #000;
+}
+
+#stories .card h3 {
+  color: #000;
+  text-decoration: none;
+}
+
+#stories .card p {
+  color: #000;
+}
+
+#stories a {
+  text-decoration: none;
+}
+
+#stories .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-size: 18px;
+}
+
+#stories .owl-nav span {
+  font-size: 40px;
+}
+
 #resHero {
   height: 500px;
   z-index: -1;
@@ -392,6 +494,32 @@
   z-index: 10;
 }
 
+#header .navbar-toggler {
+  border: none;
+  font-size: 40px;
+}
+
+#header .navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .nav-link {
+  cursor: pointer;
+  color: black !important;
+  margin: 5px;
+  padding: 1px 3px;
+}
+
+#header .login-btn {
+  border: 1px solid transparent;
+}
+
+#header .register-btn {
+  border: 1px solid gray;
+}
+
 #header .searchbar {
   padding-top: 20px;
   padding-left: 10px;
@@ -405,6 +533,22 @@
   border-bottom-left-radius: 5px;
   text-align: center;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header .searchbar .search input {
+  color: #007bff;
+  text-align: center;
+  border: none;
+  height: 35px;
+  width: 240px;
+  border: 1px solid gray;
+  padding: 8px;
 }
 
 #header .searchbar .search-btn {
@@ -452,21 +596,22 @@
   width: 36px;
   height: 36px;
   color: #000;
-  background-color: #fff;
-  text-align: center;
-  border-radius: 50%;
-  margin: 3px;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-}
-
-#footer .social-media i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #c9c9c9;
+  margin: 3px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 #footer .social-media li:hover {
@@ -474,7 +619,8 @@
   background-color: #418ea5;
 }
 
-.container .row .col-lg-12 .filter {
+#pills-tab {
+  padding-top: 5px;
   margin: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -484,13 +630,13 @@
           justify-content: center;
 }
 
-.container .row .col-lg-12 .filter a {
+#pills-tab a {
   text-decoration: none;
-  font-weight: 600;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 0.875rem;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 10px;
+  padding: 0.5rem 1rem;
   border-radius: 50px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -499,9 +645,15 @@
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   color: #818181;
+  z-index: 10;
 }
 
-.container .row .col-lg-12 .filter a:hover {
+#pills-tab .active {
+  background-color: #00aaf3;
+  color: #fff;
+}
+
+#pills-tab a:hover {
   -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }

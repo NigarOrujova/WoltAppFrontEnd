@@ -1,0 +1,36 @@
+#stories{
+    padding: 20px 0;
+    .card{
+        height: 300px;
+        border-radius: 15px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        img{
+            border-radius: 15px 15px 0px 0;
+        }
+        h3{
+            font-size: 18px;
+            color: #000;
+        }
+        h3{
+            color: #000;
+            text-decoration: none;
+        }
+        p{
+            color: #000;
+        }
+    }
+    a{
+        text-decoration: none;
+    }
+    .owl-nav{
+        display: flex;
+        justify-content: end;
+        font-size: 18px;
+        span{
+            font-size: 40px;
+        }
+    }
+}

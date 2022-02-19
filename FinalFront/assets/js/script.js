@@ -1,16 +1,11 @@
 // Loader
-
 var loader = document.getElementById("loader");
 
 window.addEventListener("load",function (){
     loader.style.display = "none";
 });
 
-
-
-
-// SLIDERS
-
+//SLIDERS
 $('.slide-one').owlCarousel({
     loop:true,
     margin:10,
@@ -79,7 +74,6 @@ $('.slide-three').owlCarousel({
         }
     }
 })
-
 
 $('.slide-four').owlCarousel({
     margin:10,

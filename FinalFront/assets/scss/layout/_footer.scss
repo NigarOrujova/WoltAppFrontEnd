@@ -18,15 +18,15 @@
         width: 36px;
         height: 36px;
         color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color:#fff;
         text-align: center;
         border-radius: 50%;
+        border: 1px solid rgb(201, 201, 201);
         margin: 3px;
         transition: .3s ease;
-    }
-    .social-media i{
-        display: flex;
-        justify-content: center;
     }
     .social-media li:hover{
         color: #fff;
