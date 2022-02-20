@@ -1,5 +1,8 @@
 #restaurants{
     padding: 20px 0;
+    h1{
+        font-weight: 700;
+    }
     .col-lg-4{
         padding: 0 8px;
         a{
@@ -9,14 +12,28 @@
                 height: 300px;
                 border-radius: 15px;
                 background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
                 position: relative;
-                img{
-                    border-radius: 15px 15px 0px 0;
+                overflow-y: hidden;
+                .imgArea{
+                    transition: 0.5s;
+                    height: 200px !important;
+                overflow: hidden;
+                    img{
+                        border-radius: 15px 15px 0 0;
+                        width: 100%;
+                    }
                 }
-                h3{
-                    font-size: 18px;
+                .imgArea:hover img{
+                    transition: 0.5s;            
+                    transform: scale(1.1);
+                }
+                .card-body{
+                    overflow-y: hidden;
+                    height: 50px;
+                    border: 6px solid transparent;
+                    h3{
+                        font-size: 18px;
+                    }
                 }
             }
         }

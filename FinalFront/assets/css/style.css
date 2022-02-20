@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 #hero {
   padding: 20px 0;
 }
@@ -48,21 +49,18 @@
   border-radius: 15px;
   background-position: center;
   position: relative;
-}
-
-#card a .card .col-lg-12 img {
-  border-radius: 15px 15px 0px 0;
-}
-
-#card a .card .col-lg-12 h3 {
-  font-size: 18px;
+  overflow-y: hidden;
 }
 
 #card a .card .imgArea {
-  overflow: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   height: 200px !important;
+  overflow: hidden;
+}
+
+#card a .card .imgArea img {
+  border-radius: 15px 15px 0 0;
 }
 
 #card a .card .imgArea:hover img {
@@ -76,6 +74,10 @@
   overflow-y: hidden;
   height: 50px;
   border: 6px solid transparent;
+}
+
+#card a .card .card-body h3 {
+  font-size: 18px;
 }
 
 #card .owl-nav {
@@ -105,10 +107,12 @@
   overflow: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
+}
+
+#category .col-lg-12 a .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #category .col-lg-12 a .card:hover img {
@@ -116,6 +120,8 @@
   transition: 0.5s;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #category .col-lg-12 a h3 {
@@ -249,6 +255,10 @@
   padding: 20px 0;
 }
 
+#restaurants h1 {
+  font-weight: 700;
+}
+
 #restaurants .col-lg-4 {
   padding: 0 8px;
 }
@@ -262,16 +272,36 @@
   height: 300px;
   border-radius: 15px;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
+  overflow-y: hidden;
 }
 
-#restaurants .col-lg-4 a .card img {
-  border-radius: 15px 15px 0px 0;
+#restaurants .col-lg-4 a .card .imgArea {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 200px !important;
+  overflow: hidden;
 }
 
-#restaurants .col-lg-4 a .card h3 {
+#restaurants .col-lg-4 a .card .imgArea img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+}
+
+#restaurants .col-lg-4 a .card .imgArea:hover img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#restaurants .col-lg-4 a .card .card-body {
+  overflow-y: hidden;
+  height: 50px;
+  border: 6px solid transparent;
+}
+
+#restaurants .col-lg-4 a .card .card-body h3 {
   font-size: 18px;
 }
 
@@ -292,16 +322,36 @@
   height: 300px;
   border-radius: 15px;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
+  overflow-y: hidden;
 }
 
-#stories .col-lg-4 a .card img {
-  border-radius: 15px 15px 0px 0;
+#stories .col-lg-4 a .card .imgArea {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 200px !important;
+  overflow: hidden;
 }
 
-#stories .col-lg-4 a .card h3 {
+#stories .col-lg-4 a .card .imgArea img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+}
+
+#stories .col-lg-4 a .card .imgArea:hover img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#stories .col-lg-4 a .card .card-body {
+  overflow-y: hidden;
+  height: 50px;
+  border: 6px solid transparent;
+}
+
+#stories .col-lg-4 a .card .card-body h3 {
   font-size: 18px;
 }
 
@@ -583,8 +633,6 @@
   -webkit-font-feature-settings: "kern";
           font-feature-settings: "kern";
   -webkit-font-smoothing: antialiased;
-  /* text-rendering: optimizelegibility; */
-  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif; */
   font-size: 1rem;
   line-height: 1.5rem;
   font-style: normal;

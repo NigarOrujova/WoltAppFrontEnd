@@ -7,18 +7,14 @@
             border-radius: 15px;
             background-position: center;
             position: relative;
-            .col-lg-12{ 
-                img{
-                    border-radius: 15px 15px 0px 0;
-                }
-                h3{
-                    font-size: 18px;
-                }
-            }
+            overflow-y: hidden;
             .imgArea{
-                overflow: hidden;
                 transition: 0.5s;
                 height: 200px !important;
+                overflow: hidden;
+                img{
+                    border-radius: 15px 15px 0 0;
+                }
             }
             .imgArea:hover img{
                 transition: 0.5s;            
@@ -28,6 +24,9 @@
                 overflow-y: hidden;
                 height: 50px;
                 border: 6px solid transparent;
+                h3{
+                    font-size: 18px;
+                }
             }
         }
     }
