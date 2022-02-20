@@ -6,12 +6,6 @@
     position: fixed;
     z-index: 9999;
 }
-
-.navbar-brand{
-    height: 80px;
-    margin-top: -30px;
-}
-
 #header{
     z-index: 10;
     .navbar-toggler{
@@ -20,10 +14,13 @@
     }
     .navbar-brand{
         display: flex;
+        height: 80px;
+        margin-top: -30px;
+        padding: 0;
     }
     .nav-link{
         cursor: pointer;
-        color: black !important;
+        color: rgb(71, 71, 71);
         margin: 5px;
         padding:1px 3px ;
     }
@@ -35,11 +32,9 @@
         border: 1px solid gray;
     }
     .searchbar{
-        padding-top: 20px;
-        padding-left: 10px;
-    
+        margin-left: 170px;
         .search{
-            width: 420px;
+            width: 250px;
             height: 40px;
             border: 1px solid $base-color;
             border-top-left-radius: 5px;
@@ -63,7 +58,7 @@
             background:$base-color;
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
-            width: 100px;
+            width: 50px;
             height: 40px;
             i{
                 color: white;

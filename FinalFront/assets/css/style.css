@@ -420,13 +420,13 @@
 /* Searchbar */
 @media screen and (max-width: 1450px) and (min-width: 1050px) {
   .search {
-    width: 330px !important;
+    width: 250px !important;
   }
 }
 
-@media screen and (max-width: 1050px) and (min-width: 770px) {
+@media screen and (max-width: 1050px) and (min-width: 1000px) {
   .searchbar {
-    padding-left: 5px !important;
+    margin-left: 100px !important;
   }
   .search {
     width: 220px !important;
@@ -440,67 +440,19 @@
   .welcome-parallax-content {
     height: 500px;
   }
-  .searchbar {
-    padding-left: 5px !important;
-  }
-  .search {
-    width: 135px !important;
-  }
-}
-
-@media screen and (min-width: 430px) and (max-width: 575px) {
-  .searchbar {
-    padding-left: 5px !important;
-  }
-  .search {
-    width: 290px !important;
-  }
-}
-
-@media screen and (min-width: 380px) and (max-width: 430px) {
-  .searchbar {
-    padding-left: 5px !important;
-    margin-top: 15px;
-  }
-  .search {
-    width: 245px !important;
-  }
-}
-
-@media screen and (min-width: 325px) and (max-width: 380px) {
-  .searchbar {
-    padding-left: 5px !important;
-    margin-top: 15px;
-  }
-  .search {
-    width: 220px !important;
-  }
-}
-
-@media screen and (min-width: 325px) and (max-width: 355px) {
-  .searchbar {
-    padding-left: 5px !important;
-    margin-top: 15px;
-  }
-  .search {
-    width: 185px !important;
-  }
 }
 
 @media screen and (min-width: 280px) and (max-width: 325px) {
-  .searchbar {
-    padding-left: 0px !important;
-    margin-top: 15px;
-  }
-  .search {
-    width: 150px !important;
-  }
   .time-title {
     padding-top: 10px;
   }
 }
 
-@media screen and (min-width: 280px) and (max-width: 1050px) {
+@media screen and (min-width: 280px) and (max-width: 1000px) {
+  .searchbar {
+    padding-left: 0 !important;
+    margin: 0 !important;
+  }
   .cardCategory ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -530,11 +482,6 @@
   z-index: 9999;
 }
 
-.navbar-brand {
-  height: 80px;
-  margin-top: -30px;
-}
-
 #header {
   z-index: 10;
 }
@@ -548,11 +495,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 80px;
+  margin-top: -30px;
+  padding: 0;
 }
 
 #header .nav-link {
   cursor: pointer;
-  color: black !important;
+  color: #474747;
   margin: 5px;
   padding: 1px 3px;
 }
@@ -566,12 +516,11 @@
 }
 
 #header .searchbar {
-  padding-top: 20px;
-  padding-left: 10px;
+  margin-left: 170px;
 }
 
 #header .searchbar .search {
-  width: 420px;
+  width: 250px;
   height: 40px;
   border: 1px solid #00aaf3;
   border-top-left-radius: 5px;
@@ -601,7 +550,7 @@
   background: #00aaf3;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  width: 100px;
+  width: 50px;
   height: 40px;
 }
 
