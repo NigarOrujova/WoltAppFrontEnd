@@ -1,28 +1,35 @@
 #card{
-    .card{
-        height: 300px;
-        border-radius: 15px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-        img{
-            border-radius: 15px 15px 0px 0;
-        }
-        h3{
-            font-size: 18px;
-            color: #000;
-        }
-        h3{
-            color: #000;
-            text-decoration: none;
-        }
-        p{
-            color: #000;
-        }
-    }
     a{
         text-decoration: none;
+        color: #000;
+        .card{
+            height: 300px;
+            border-radius: 15px;
+            background-position: center;
+            position: relative;
+            .col-lg-12{ 
+                img{
+                    border-radius: 15px 15px 0px 0;
+                }
+                h3{
+                    font-size: 18px;
+                }
+            }
+            .imgArea{
+                overflow: hidden;
+                transition: 0.5s;
+                height: 200px !important;
+            }
+            .imgArea:hover img{
+                transition: 0.5s;            
+                transform: scale(1.1);
+            }
+            .card-body{
+                overflow-y: hidden;
+                height: 50px;
+                border: 6px solid transparent;
+            }
+        }
     }
     .owl-nav{
         display: flex;

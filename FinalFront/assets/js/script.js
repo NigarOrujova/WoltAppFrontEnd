@@ -24,7 +24,7 @@ $('.slide-one').owlCarousel({
         1000:{
             items:1,
             nav:true,
-            loop:false
+            loop:true
         }
     }
 })

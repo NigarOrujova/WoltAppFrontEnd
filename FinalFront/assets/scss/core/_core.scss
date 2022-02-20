@@ -83,3 +83,19 @@
         padding-top: 10px;
     }
 }
+@media screen and (min-width: 280px) and (max-width:1050px){
+    .cardCategory{
+        ul{
+            display: flex;
+            list-style: none;
+            z-index: 997;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+            transition: box-shadow .15s ease-in-out;
+            box-shadow: 0 3px 3px #0000001f, 0 0 3px #0000000f;
+            li{
+                margin: 0.75rem;
+            }
+        }
+    }
+}
