@@ -1,27 +1,40 @@
 #hero{
     padding: 20px 0;
     .owl-nav{
-        span{
-            font-size: 40px;
+        display: flex;
+        justify-content: end;
+        font-size: 18px;
+        button{
+            @extend %button;
+        }
+        button:hover{
+            background-color:rgba(255, 255, 255, 0);
+        }
+        button:hover span{
+                color:$base-color;
+                border: 1px solid $base-color;
         }
     }
     .slide-one{
         .item{
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-            .imgArea{
-                overflow: hidden;
-                transition: 0.5s;
-    
-            }
-            .imgArea:hover img{
-                transition: 0.5s;            
-                transform: scale(1.1);
-            }
-            .card-body{
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                height: 100%;
+            .card{
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+                .imgArea{
+                    overflow: hidden;
+                    transition: 0.3s;
+                    border-radius:10px 0 0 10px ;
+                }
+                .imgArea:hover img{
+                    transition: 0.3s;            
+                    transform: scale(1.1);
+                }
+                .card-body{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    height: 100%;
+                }
             }
         }
     }
