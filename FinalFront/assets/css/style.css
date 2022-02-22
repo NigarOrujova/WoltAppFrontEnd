@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 #hero {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 #hero .owl-nav {
@@ -88,10 +88,6 @@
   border: 6px solid transparent;
 }
 
-#card a .card .card-body h3 {
-  font-size: 18px;
-}
-
 #card a .card:hover img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -135,22 +131,26 @@
   text-decoration: none;
 }
 
-#category .col-lg-12 a .card {
+#category .col-lg-12 a .category-card {
+  margin-bottom: 20px;
+}
+
+#category .col-lg-12 a .category-card .card {
   height: 250px;
   overflow: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border: 0;
 }
 
-#category .col-lg-12 a .card img {
+#category .col-lg-12 a .category-card .card img {
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 8px;
 }
 
-#category .col-lg-12 a .card:hover img {
+#category .col-lg-12 a .category-card .card:hover img {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-transform: scale(1.1);
@@ -159,15 +159,9 @@
      object-fit: cover;
 }
 
-#category .col-lg-12 a .card:hover {
+#category .col-lg-12 a .category-card .card:hover {
   -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
           box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-}
-
-#category .col-lg-12 a h3 {
-  font-size: 24px;
-  padding: 15px 0;
-  color: #000;
 }
 
 #category .col-lg-12 .owl-nav {
@@ -301,15 +295,12 @@
 }
 
 #restaurants {
-  padding: 20px 0;
-}
-
-#restaurants h1 {
-  font-weight: 700;
+  padding: 40px 0;
 }
 
 #restaurants .col-lg-4 {
   padding: 0 8px;
+  padding-bottom: 1.75rem;
 }
 
 #restaurants .col-lg-4 a {
@@ -362,11 +353,12 @@
 }
 
 #stories {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 #stories .col-lg-4 {
   padding: 0 8px;
+  padding-bottom: 1.75rem;
 }
 
 #stories .col-lg-4 a {
@@ -670,18 +662,18 @@
   background-color: #f3f3f3;
 }
 
-#footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-#footer ul a {
+#footer a {
   color: #000;
 }
 
-#footer ul a:hover {
+#footer a:hover {
   color: #00aaf3;
   text-decoration: none;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
 }
 
 #footer .social-media {
@@ -767,5 +759,25 @@
   border-radius: 5px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
           box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+#restaurants h1, #stories h1 {
+  font-family: nunito, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+#card h2, #category h2, #discount h2 {
+  font-family: nunito, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  padding: 5px 0;
+}
+
+#card a .card .card-body h3, #category .col-lg-12 a .category-card h3 {
+  color: #202125;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 0.75rem 0;
 }
 /*# sourceMappingURL=style.css.map */

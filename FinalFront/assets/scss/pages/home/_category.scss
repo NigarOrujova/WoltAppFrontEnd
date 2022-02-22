@@ -1,31 +1,36 @@
 #category{
     padding:20px 0;
+    h2{
+        @extend %h2
+    }
     .col-lg-12{
         padding: 0 5px;
         a{
             text-decoration: none;
-            .card{
-                height: 250px;
-                overflow: hidden;
-                transition: 0.3s;     
-                position: relative;
-                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-                img{
-                object-fit: cover;
+            .category-card{
+                margin-bottom: 20px;
+                .card{
+                    height: 250px;
+                    overflow: hidden;
+                    transition: 0.3s;     
+                    position: relative;
+                    border: 0;
+                    img{
+                    object-fit: cover;
+                    border-radius: 8px;
+                    }
                 }
-            }
-            .card:hover img{
-                transition: 0.3s;            
-                transform: scale(1.1);
-                object-fit: cover;
-            }
-            .card:hover{
-                box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-            }
-            h3{
-                font-size: 24px;
-                padding: 15px 0;
-                color: #000;;
+                .card:hover img{
+                    transition: 0.3s;            
+                    transform: scale(1.1);
+                    object-fit: cover;
+                }
+                .card:hover{
+                    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+                }
+                h3{
+                    @extend %h3
+                }
             }
         }
         .owl-nav{

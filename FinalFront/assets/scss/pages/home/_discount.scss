@@ -1,4 +1,7 @@
 #discount{
+    h2{
+        @extend %h2
+    }
     .card{
         height: 200px;
         border-radius: 15px;
