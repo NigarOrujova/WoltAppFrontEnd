@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <!--    Bootstrap Icon CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <!-- Wolt Fonts -->
+        <link rel="stylesheet" href="https://use.typekit.net/ucu8xtb.css">
     <!--    Owl Carousel-->
     <link rel="stylesheet" href="./assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
@@ -54,27 +56,59 @@
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                         <span>View Order</span>
                         <span class="badge badge-md badge-circle badge-floating badge-light border-white">4</span>
-                      </button>
-                      <!-- modal start -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    </button>
+                    <!-- modal start -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Your Order</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Your Order</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                   <div class="container">
+                                    <div class="card">
+                                        <div class="row g-0">
+                                            <div class="col-md-1">
+                                                <div class="count">
+                                                    <p>1</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">McChicken™</h5>
+                                                    <p class="card-text"><span>AZN 3.90</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="cardImg">
+                                                    <img src="./assets/img/mcproduct-1.png"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">
+                                        <div class="button-content">
+                                            <div class="row">
+                                                <div class="col-1">
+                                                    <span class="badge badge-md badge-circle badge-floating badge-light border-white">4</span>
+                                                </div>
+                                                <div class="col-11">
+                                                <p class="card-text">Go to checkout<span>AZN 3.90</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="modal-body">
-                              ...
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Go to checkout</button>
-                            </div>
-                          </div>
                         </div>
-                      </div>                      
+                    </div>
                 </div>
             </nav>
         </div>
@@ -82,11 +116,13 @@
     <!-- Header End -->
     <!-- Main Start -->
     <main>
-        <section id="resHero" style="background-image: url(./assets/img/res-hero-1.png);">
+        <section id="resHero" style="background-image: url(./assets/img/res-hero-1.png);background-position: top;background-repeat: no-repeat;background-size: cover;">
             <div class="container">
                 <div class="row">
-                    <h1>McDonald's</h1>
-                    <p>I'm lovin' it!</p>
+                    <div class="hero-area text-white">
+                        <h1>McDonald's</h1>
+                        <p>I'm lovin' it!</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -124,94 +160,128 @@
                             </div>
                             <div class="product">
                                 <div class="product-item">
-                                    <div class="line"></div>
-                                    <div class="card">
+                                    <div class="card" data-toggle="modal" data-target="#mcproduct1">
                                         <div class="row g-0">
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">McChicken™</h5>
                                                     <p class="card-text">Karamelləşdirilmiş bulkanın arasında suxarıya
-                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və xüsusi
+                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və
+                                                        xüsusi
                                                         McChicken™ sousu.</p>
                                                     <p class="card-text"><span>AZN 3.90</span></p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="cardImg">
-                                                    <img src="./assets/img/mcproduct-1.png" class="img-fluid rounded-start"
-                                                        alt="...">
+                                                    <img src="./assets/img/mcproduct-1.png"
+                                                        class="img-fluid rounded-start" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="mcproduct1" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel"><img
+                                                            src="./assets/img/mcproduct-1.png"
+                                                            class="img-fluid rounded-start" alt="..."></h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h5 class="card-title">McChicken™</h5>
+                                                    <p class="card-text">Karamelləşdirilmiş bulkanın arasında suxarıya
+                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və
+                                                        xüsusi
+                                                        McChicken™ sousu.</p>
+                                                    <p class="card-text"><span>AZN 3.90</span></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <div class="row">
+                                                        <div class="col-lg-4"><button type="button" class="btn btn-secondary pro-count"><i id="m1" class="fas fa-minus"></i>1<i id="p1" class="fas fa-plus"></i></button></div>
+                                                        <div class="col-lg-8"><button type="button" class="btn btn-primary add-basket">Add basket</button></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="product-item">
-                                    <div class="line"></div>
+                                     
                                     <div class="card">
                                         <div class="row g-0">
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">McChicken™</h5>
                                                     <p class="card-text">Karamelləşdirilmiş bulkanın arasında suxarıya
-                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və xüsusi
+                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və
+                                                        xüsusi
                                                         McChicken™ sousu.</p>
                                                     <p class="card-text"><span>AZN 3.90</span></p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="cardImg">
-                                                    <img src="./assets/img/mcproduct-1.png" class="img-fluid rounded-start"
-                                                        alt="...">
+                                                    <img src="./assets/img/mcproduct-1.png"
+                                                        class="img-fluid rounded-start" alt="...">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="product-item">
-                                    <div class="line"></div>
+                                     
                                     <div class="card">
                                         <div class="row g-0">
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">McChicken™</h5>
                                                     <p class="card-text">Karamelləşdirilmiş bulkanın arasında suxarıya
-                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və xüsusi
+                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və
+                                                        xüsusi
                                                         McChicken™ sousu.</p>
                                                     <p class="card-text"><span>AZN 3.90</span></p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="cardImg">
-                                                    <img src="./assets/img/mcproduct-1.png" class="img-fluid rounded-start"
-                                                        alt="...">
+                                                    <img src="./assets/img/mcproduct-1.png"
+                                                        class="img-fluid rounded-start" alt="...">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="product-item">
-                                    <div class="line"></div>
+                                     
                                     <div class="card">
                                         <div class="row g-0">
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">McChicken™</h5>
                                                     <p class="card-text">Karamelləşdirilmiş bulkanın arasında suxarıya
-                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və xüsusi
+                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və
+                                                        xüsusi
                                                         McChicken™ sousu.</p>
                                                     <p class="card-text"><span>AZN 3.90</span></p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="cardImg">
-                                                    <img src="./assets/img/mcproduct-1.png" class="img-fluid rounded-start"
-                                                        alt="...">
+                                                    <img src="./assets/img/mcproduct-1.png"
+                                                        class="img-fluid rounded-start" alt="...">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="line"></div>
+                                 
                             </div>
                         </div>
                         <div class="menu-item">
@@ -220,94 +290,98 @@
                             </div>
                             <div class="product">
                                 <div class="product-item">
-                                    <div class="line"></div>
+                                     
                                     <div class="card">
                                         <div class="row g-0">
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">McChicken™</h5>
                                                     <p class="card-text">Karamelləşdirilmiş bulkanın arasında suxarıya
-                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və xüsusi
+                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və
+                                                        xüsusi
                                                         McChicken™ sousu.</p>
                                                     <p class="card-text"><span>AZN 3.90</span></p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="cardImg">
-                                                    <img src="./assets/img/mcproduct-1.png" class="img-fluid rounded-start"
-                                                        alt="...">
+                                                    <img src="./assets/img/mcproduct-1.png"
+                                                        class="img-fluid rounded-start" alt="...">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="product-item">
-                                    <div class="line"></div>
+                                     
                                     <div class="card">
                                         <div class="row g-0">
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">McChicken™</h5>
                                                     <p class="card-text">Karamelləşdirilmiş bulkanın arasında suxarıya
-                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və xüsusi
+                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və
+                                                        xüsusi
                                                         McChicken™ sousu.</p>
                                                     <p class="card-text"><span>AZN 3.90</span></p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="cardImg">
-                                                    <img src="./assets/img/mcproduct-1.png" class="img-fluid rounded-start"
-                                                        alt="...">
+                                                    <img src="./assets/img/mcproduct-1.png"
+                                                        class="img-fluid rounded-start" alt="...">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="product-item">
-                                    <div class="line"></div>
+                                     
                                     <div class="card">
                                         <div class="row g-0">
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">McChicken™</h5>
                                                     <p class="card-text">Karamelləşdirilmiş bulkanın arasında suxarıya
-                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və xüsusi
+                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və
+                                                        xüsusi
                                                         McChicken™ sousu.</p>
                                                     <p class="card-text"><span>AZN 3.90</span></p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="cardImg">
-                                                    <img src="./assets/img/mcproduct-1.png" class="img-fluid rounded-start"
-                                                        alt="...">
+                                                    <img src="./assets/img/mcproduct-1.png"
+                                                        class="img-fluid rounded-start" alt="...">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="product-item">
-                                    <div class="line"></div>
+                                     
                                     <div class="card">
                                         <div class="row g-0">
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">McChicken™</h5>
                                                     <p class="card-text">Karamelləşdirilmiş bulkanın arasında suxarıya
-                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və xüsusi
+                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və
+                                                        xüsusi
                                                         McChicken™ sousu.</p>
                                                     <p class="card-text"><span>AZN 3.90</span></p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="cardImg">
-                                                    <img src="./assets/img/mcproduct-1.png" class="img-fluid rounded-start"
-                                                        alt="...">
+                                                    <img src="./assets/img/mcproduct-1.png"
+                                                        class="img-fluid rounded-start" alt="...">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="line"></div>
+                                 
                             </div>
                         </div>
                         <div class="menu-item">
@@ -316,103 +390,108 @@
                             </div>
                             <div class="product">
                                 <div class="product-item">
-                                    <div class="line"></div>
+                                     
                                     <div class="card">
                                         <div class="row g-0">
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">McChicken™</h5>
                                                     <p class="card-text">Karamelləşdirilmiş bulkanın arasında suxarıya
-                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və xüsusi
+                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və
+                                                        xüsusi
                                                         McChicken™ sousu.</p>
                                                     <p class="card-text"><span>AZN 3.90</span></p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="cardImg">
-                                                    <img src="./assets/img/mcproduct-1.png" class="img-fluid rounded-start"
-                                                        alt="...">
+                                                    <img src="./assets/img/mcproduct-1.png"
+                                                        class="img-fluid rounded-start" alt="...">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="product-item">
-                                    <div class="line"></div>
+                                     
                                     <div class="card">
                                         <div class="row g-0">
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">McChicken™</h5>
                                                     <p class="card-text">Karamelləşdirilmiş bulkanın arasında suxarıya
-                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və xüsusi
+                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və
+                                                        xüsusi
                                                         McChicken™ sousu.</p>
                                                     <p class="card-text"><span>AZN 3.90</span></p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="cardImg">
-                                                    <img src="./assets/img/mcproduct-1.png" class="img-fluid rounded-start"
-                                                        alt="...">
+                                                    <img src="./assets/img/mcproduct-1.png"
+                                                        class="img-fluid rounded-start" alt="...">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="product-item">
-                                    <div class="line"></div>
+                                     
                                     <div class="card">
                                         <div class="row g-0">
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">McChicken™</h5>
                                                     <p class="card-text">Karamelləşdirilmiş bulkanın arasında suxarıya
-                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və xüsusi
+                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və
+                                                        xüsusi
                                                         McChicken™ sousu.</p>
                                                     <p class="card-text"><span>AZN 3.90</span></p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="cardImg">
-                                                    <img src="./assets/img/mcproduct-1.png" class="img-fluid rounded-start"
-                                                        alt="...">
+                                                    <img src="./assets/img/mcproduct-1.png"
+                                                        class="img-fluid rounded-start" alt="...">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="product-item">
-                                    <div class="line"></div>
+                                     
                                     <div class="card">
                                         <div class="row g-0">
                                             <div class="col-md-8">
                                                 <div class="card-body">
                                                     <h5 class="card-title">McChicken™</h5>
                                                     <p class="card-text">Karamelləşdirilmiş bulkanın arasında suxarıya
-                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və xüsusi
+                                                        batırılmış, qızardılmış toyuq kotleti, təzə Aysberq salatı və
+                                                        xüsusi
                                                         McChicken™ sousu.</p>
                                                     <p class="card-text"><span>AZN 3.90</span></p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="cardImg">
-                                                    <img src="./assets/img/mcproduct-1.png" class="img-fluid rounded-start"
-                                                        alt="...">
+                                                    <img src="./assets/img/mcproduct-1.png"
+                                                        class="img-fluid rounded-start" alt="...">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="line"></div>
+                                 
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div id="about" class="col-lg-4 col-md-12">
                         <h2>Məkan məlumatları</h2>
                         <h3>Ünvan</h3>
                         <p>Uzeyir Hajibayov cross Bulbul avenue, 207, 2nd entrance</p>
                         <h3>Contact</h3>
-                        <p>Allergiyanız və ya pəhrizlə bağlı məhdudiyyətləriniz varsa, restoran ilə əlaqə saxlayın. Restoran sorğu əsasında yemək ilə bağlı məlumatlar təmin edəcək.</p>
+                        <p>Allergiyanız və ya pəhrizlə bağlı məhdudiyyətləriniz varsa, restoran ilə əlaqə saxlayın.
+                            Restoran sorğu əsasında yemək ilə bağlı məlumatlar təmin edəcək.</p>
                         <div class="phone-number">
                             <a href="tel:+994770000000"><span>+994770000000</span></a>
                         </div>
